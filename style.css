@@ -1,0 +1,53 @@
+@import url('https://googleapis.com');
+
+body {
+    background-color: #e0f2fe; /* Baby Blue Background */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container { text-align: center; width: 90%; max-width: 450px; transition: 0.5s; }
+.hidden { display: none !important; }
+h1, h2 { color: #0369a1; margin-bottom: 20px; }
+.cute-gif { width: 140px; margin-bottom: 20px; border-radius: 15px; }
+
+/* BUTTONS */
+.btn-group { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
+button { padding: 12px 30px; font-size: 16px; font-weight: 600; border: none; border-radius: 50px; cursor: pointer; transition: 0.3s; }
+#yesBtn { background-color: #0ea5e9; color: white; box-shadow: 0 4px 15px rgba(14, 165, 233, 0.4); }
+#noBtn { background-color: #ffffff; color: #0369a1; border: 2px solid #0ea5e9; z-index: 100; }
+
+/* GIFT GRID */
+.gift-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.gift-box { background: white; padding: 20px 10px; border-radius: 15px; cursor: pointer; border: 2px solid #bae6fd; transition: 0.3s; }
+.gift-box:hover { transform: translateY(-5px); background: #f0f9ff; }
+.gift-box span { display: block; font-size: 30px; margin-bottom: 5px; }
+.gift-label { font-size: 10px; font-weight: bold; color: #0369a1; letter-spacing: 1px; }
+
+/* PHOTO GALLERY */
+.gallery-wrapper { display: flex; justify-content: center; gap: 10px; background: white; padding: 15px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.photo-frame { width: 100px; height: 100px; background: #f1f5f9; border: 3px solid white; overflow: hidden; }
+.photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+/* MUSIC PLAYER */
+.player-card { background: #7dd3fc; padding: 20px; border-radius: 25px; display: flex; align-items: center; gap: 20px; text-align: left; box-shadow: 0 10px 25px rgba(3, 105, 161, 0.15); }
+.vinyl-disk { width: 110px; height: 110px; background: #333; border-radius: 50%; border: 8px solid #f9f9f9; animation: spin 5s linear infinite; flex-shrink: 0; position: relative; }
+.vinyl-center { width: 35px; height: 35px; background: #7dd3fc; border-radius: 50%; border: 3px solid #333; margin: 30px auto; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+.dedication { font-size: 10px; color: #0369a1; margin: 0; opacity: 0.9; text-transform: uppercase; font-weight: 600; }
+.song-title { color: #0c4a6e; margin: 5px 0; font-size: 18px; font-weight: bold; }
+.artist-name { color: #075985; opacity: 0.8; font-size: 13px; margin: 0; }
+
+/* MESSAGE CARD */
+.message-card { background: white; padding: 35px; border-radius: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); text-align: justify; }
+.message-text { font-size: 14px; line-height: 1.8; color: #334155; min-height: 200px; }
+.signature { font-family: 'Dancing Script', cursive; color: #0ea5e9; font-size: 26px; text-align: right; margin-top: 15px; }
+
+.back-btn { margin-top: 25px; background: none; color: #0ea5e9; border: 1px solid #0ea5e9; padding: 8px 20px; font-size: 11px; text-transform: uppercase; }
+            
